@@ -2,7 +2,7 @@ class Triangle
   
   attr_writer :side_1, :side_2, :side_3
   
-  def initialize(side_1_length, side_2_length, side_3_length)
+  def initialize(side_1, side_2, side_3)
     @side_1_length = side_1
     @side_2_length = side_2
     @side_3_length = side_3
