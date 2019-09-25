@@ -32,11 +32,11 @@ class Triangle
       end
     end 
   end 
+
+
 end  
   
   
-  class TriangleError < StandardError
-    "defined shape is not a triangle"
-  end
+  
   
 
