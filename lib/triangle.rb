@@ -20,7 +20,7 @@ class Triangle
   
   def kind 
     if self.triangle? == false
-      
+      raise TriangleError
     
     if @side_1 == @side_2 && @side_2 == @side_3
       :equilateral
