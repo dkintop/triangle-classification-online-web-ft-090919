@@ -1,5 +1,7 @@
 class Triangle
-  
+  class TriangleError < StandardError
+    "defined shape is not a triangle"
+  end
   
   
   attr_writer :side_1, :side_2, :side_3
