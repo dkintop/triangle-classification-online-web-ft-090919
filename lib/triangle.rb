@@ -9,11 +9,19 @@ class Triangle
   end 
   
   def triangle?
-    
+     if (@side_1 <= 0) || (@side_2 <= 0) || (@side_3 <= 0)
+      false
+    elsif (@side_1+@side_2 <= @side_3) || (@side_1+@side_3 <= @side_2) || (@side_2+@side_3 <= @side_1)
+      false 
+    else 
+      true
   end 
   
   
   def kind 
+    if self.triangle? == false
+      
+    
     if @side_1 == @side_2 && @side_2 == @side_3
       :equilateral
     end
